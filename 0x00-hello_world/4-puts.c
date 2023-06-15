@@ -1,4 +1,3 @@
-#!/bin/bash
 #include <stdio.h>
 /**
  * description: main - print out string to stdout.
