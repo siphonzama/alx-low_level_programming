@@ -1,6 +1,6 @@
-#include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
-#include "list.h"
+#include "lists.h"
 
 /**
  * add_node -add new node at the beginning of the linked lidt 
@@ -8,7 +8,7 @@
  * return _ the address of teh new element, or NULL if fails 
  */
 
-list_t *add_node(list_t **head, const char *str);
+list_t *add_node(list_t **head, const char *str)
 {
 	list_t *new;
 	unsigned int len = 0;
