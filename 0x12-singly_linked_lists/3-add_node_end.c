@@ -3,14 +3,13 @@
 #include "lists.h"
 
 /**
- * add node end - adds a node at the end of linked list 
- * @head - double pointer to the list_t list 
- * @str - strin g to put in the new node 
- * Return - address of the neww elements, or NULL if it fa
+ *add node end - adds a node at the end of linked list
+ *@head - double pointer to the list_t list
+ *@str - strin g to put in the new node
+ *Return - address of the neww elements, or NULL if it fa
  */
 
 list_t *add_node_end(list_t **head, const char *str)
-
 {
 	list_t *new;
 	list_t *temp = *head;
@@ -19,25 +18,20 @@ list_t *add_node_end(list_t **head, const char *str)
 	while (str[len])
 		len++;
 
-
-	new = malloc(sizeof (list_t));
-	if(!new)
+	new = malloc(sizeof(list_t));
+	if (!new)
 		return (NULL);
 
-
-
-	new ->str = strdup(str);
-	new -> len = len;
-	new -> next =NULL;
+	new->str = strdup(str);
+	new->len = len;
+	new->next = NULL;
 
 	if (*head  == NULL)
 	{
 		*head = new;
 		return (new);
 	}
-
-
-	while(temp->next)
+	while (temp->next)
 		temp = temp->next;
 
 	temp->next = new;
