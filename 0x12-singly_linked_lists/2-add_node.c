@@ -3,9 +3,9 @@
 #include "lists.h"
 
 /**
- * add_node -add new node at the beginning of the linked lidt 
+ * add_node -add new node at the beginning of the linked lidt
  * @str - new string to add in the node
- * return _ the address of teh new element, or NULL if fails 
+ * return _ the address of teh new element, or NULL if fails
  */
 
 list_t *add_node(list_t **head, const char *str)
@@ -18,8 +18,7 @@ list_t *add_node(list_t **head, const char *str)
 
 	new = malloc(sizeof(list_t));
 	if (!new)
-		return(NULL);
-
+		return (NULL);
 
 	new->str = strdup(str);
 	new->len = len;
