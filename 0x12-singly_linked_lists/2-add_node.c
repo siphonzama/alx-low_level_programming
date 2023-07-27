@@ -8,7 +8,7 @@
  * return _ the address of teh new element, or NULL if fails 
  */
 
-list_t *add_node(list_t **head, const char *str)
+list_t *add_node(list_t **head, const char *str);
 {
 	list_t *new;
 	unsigned int len = 0;
@@ -21,10 +21,10 @@ list_t *add_node(list_t **head, const char *str)
 		return(NULL);
 
 
-	new-> str = strdup(str);
-	new -> lem = len;
-	new ->next = (*head);
+	new->str = strdup(str);
+	new->len = len;
+	new->next = (*head);
 	(*head) = new;
 
-	return (*head)
+	return (*head);
 }
