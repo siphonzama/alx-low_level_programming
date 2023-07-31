@@ -6,7 +6,7 @@
  * return: nodes
  */
 
-size_t ptint_listint(const listint_t *h)
+size_t print_listint(const listint_t *h)
 {
 	size_t num = 0;
 
