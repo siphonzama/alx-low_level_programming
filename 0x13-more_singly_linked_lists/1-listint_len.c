@@ -2,7 +2,7 @@
 
 /**
  * a function that returns the number of elements in a linked
- * @head: Pointer to the head od list
+ * @head: Pointer to the head of list
  * Return: Number  of nodes
  */
 
