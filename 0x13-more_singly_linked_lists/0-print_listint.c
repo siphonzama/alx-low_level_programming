@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * print_listint - print all the elements of  a list
+ * print_listint - print all the elements of a list
  * @h: linked list of type listint_t to print
  * Return: nodes
  */
@@ -17,7 +17,5 @@ size_t print_listint(const listint_t *h)
 		num++;
 		h = h->next;
 	}
-
 	return (num);
-
 }
