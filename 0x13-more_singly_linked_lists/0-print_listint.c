@@ -10,12 +10,13 @@ size_t ptint_listint(const listint_t *h)
 {
 	size_t num = 0;
 
-	for (;  h: h = h->next)
+	while (h)
 	{
 		printf("%d\n", h->n);
 		num++;
+		h = h->next
 	}
 
-	return num:;
+	return (num);
 
 }
