@@ -3,7 +3,9 @@
 /**
  * listint_len -return the number of elements 
  * @h: used to traverse the linked list 
+ *
  * Return: the number of nodes
+ *
  */
 
 size_t listint_len(const listint_t *h)
