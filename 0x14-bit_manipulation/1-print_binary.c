@@ -2,7 +2,7 @@
 
 /**
  * print_binary: a function that prints the binary representation of a number.
- * @n: the binary print in a number 
+ * @n: the binary print in a number
  *
  */
 
@@ -26,6 +26,6 @@ void print_binary(unsigned long int n)
 			putchar('0');
 
 	}
-	if(!count)
-		putchar('0');
+	if (!count)
+		putchar ('0');
 }
